@@ -5,13 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Google Maps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
+    <title>Map-mories</title>
 </head>
 <body>
-    <div class="map" id="map">Hi ben</div>
+    <!-- Main Container -->
+    <div class="container-fluid" id="main">
+        <!-- Nav Tag -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- Navcontainer -->
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#"><i class="fa-regular fa-map fa-2xl icon"></i></a>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                        aria-label="Toggle navigation">    
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/.">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/map-mories.html">My Map</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                            href="#" 
+                            role="button" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                        Let's go do...
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i> Add New Memory</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-notes-medical"></i></i> Add Next Location</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-clipboard"></i> View All Memories</a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Start Searching..." aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- Navbar Menu Ends -->
+            </div>
+            <!-- Nav Container Ends -->
+        </nav>
+        <!-- Nav Tag Ends -->
+        <div class="container home-grid">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>MyMaps</h1>
+                    <ul class="quotes-list">
+                        <li class="quotes">“I haven’t been everywhere, but it’s on my list.” <span class="author-span">– Susan Sontag</span></li>
+                        <li class="quotes">“Traveling – it leaves you speechless, then turns you into a storyteller.”<span class="author-span"> – Ibn Battuta</span></li>
+                        <li class="quotes">“We travel, some of us forever, to seek other places, other lives, other souls.” <span class="author-span">– Anais Nin</span></li>
+                        <li class="quotes"> LIVE YOUR LIFE BY A COMPASS, NOT A CLOCK. <span class="author-span">– Erica Jong</span></li>
+                        <li class="quotes">“The world is a book and those who do not travel read only one page.”
+                            <span class="author-span">– St. Augustine</span></li>
+                        <li class="quotes">“Travel is never a matter of money, but of courage.”
+                            <span class="author-span">– Paulo Coelho</span></li>
+                        <li class="quotes">“With age, comes wisdom. With travel, comes understanding.”
+                            <span class="author-span">– Sandra Lake</span></li>
+                        <li class="quotes">“When overseas you learn more about your own country, than you do the place you’re visiting.”
+                            <span class="author-span">– Clint Borgen</span></li>
+                        <li class="quotes">“Travel is fatal to prejudice, bigotry, and narrow-mindedness.”
+                            <span class="author-span">– Mark Twain</span></li>
+                        <li class="quotes">“When preparing to travel, lay out all your clothes and all your money. Then take half the clothes and twice the money.”
+                            <span class="author-span">– Susan Heller Anderson</span></li>
+                        <li class="quotes"> “No place is ever as bad as they tell you it’s going to be.”
+                            <span class="author-span">– Chuck Thompson</span></li>
+                        <li class="quotes">“We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.”
+                            <span class="author-span">– Jawaharlal Nehru</span></li>
+                        <li class="quotes">“No one realizes how beautiful it is to travel until he comes home and rests his head on his old, familiar pillow.”
+                            <span class="author-span">– Lin Yutang</span></li>
+                        <li class="quotes"> “What you’ve done becomes the judge of what you’re going to do – especially in other people’s minds. When you’re traveling, you are what you are right there and then. People don’t have your past to hold against you. No yesterdays on the road.”
+                            <span class="author-span">– William Least Heat Moon</span></li>
+                        <li class="quotes">
+                            “Your true traveler finds boredom rather agreeable than painful. It is the symbol of his liberty-his excessive freedom. He accepts his boredom, when it comes, not merely philosophically, but almost with pleasure.”
+                            <span class="author-span">– Aldous Huxley</span>
+                        </li>
+                        <li><i class="fa-solid fa-arrow-down-long fa-bounce fa-2xl"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="intro-statement">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimos accusamus quae fugiat accusantium quos beatae asperiores repudiandae! Reiciendis rem blanditiis veritatis assumenda praesentium. Eveniet placeat quasi voluptatum perspiciatis modi, voluptate aliquam eius molestias, fugit commodi consequuntur doloremque in autem.</p>
+                    <ul class="intro-list">
+                        <li class="intro-list--item">Road Trips</li>
+                        <li class="intro-list--item">Events</li>
+                        <li class="intro-list--item">Trip Collages</li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="sidemenu">
+                <div class="row">
+                    <div class="col">
+                        <ul class="map-menu">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Main Container -->
+            <!-- Footer -->
+    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center ">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted"><i class="fa-brands fa-square-github fa-xl"></i> TerRosales</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end m-4 list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="fa-solid fa-mug-hot fa-xl"></i></a></li>
+        </ul>
+    </footer>
+    <!-- Footer Ends -->
     
 
-    <script src="main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaAaUO5Yw1CF_kw_VO51J3MaPJOmook0U&callback=initMap"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
