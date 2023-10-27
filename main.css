@@ -73,7 +73,6 @@ ul li a:hover {
 
 .sidemenu {
   grid-area: sidemenu;
-  padding: 2rem;
 }
 
 .sidemenu {
@@ -124,7 +123,7 @@ ul li a:hover {
 
 .hero-text {
   overflow-y: scroll;
-  color: rgba(205, 10, 30, 0.7);
+  color: rgba(205, 10, 30, 0.9);
   background-image: linear-gradient(120deg, rgba(55, 255, 255, 0.3), rgba(250, 250, 130, 0.7), rgba(55, 255, 255, 0.3));
   width: 90%;
   height: 90%;
@@ -141,7 +140,6 @@ ul li a:hover {
   font-size: 4rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 500;
-  text-shadow: -5px 12px 10px rgba(50, 250, 250, 0.6);
 }
 .hero-text p {
   position: relative;
@@ -168,8 +166,8 @@ ul li a:hover {
 }
 
 .quotes:hover {
-  background: linear-gradient(to right, rgba(150, 190, 250, 0.45), rgba(150, 190, 250, 0.75), rgba(150, 190, 250, 0.95));
-  transform: scale(1.02);
+  background: linear-gradient(to right, rgba(200, 200, 250, 0.95) 10%, rgba(255, 255, 255, 0.9) 70%, rgba(250, 200, 200, 0.6) 80%);
+  transform: scale(1.01);
   font-size: 1.3rem;
   font-weight: 600;
   box-shadow: 0px 13px 15px rgba(5, 5, 5, 0.095);
@@ -180,9 +178,53 @@ ul li a:hover {
 }
 
 .author-span {
-  color: rgba(10, 150, 250, 0.8);
+  color: rgba(10, 150, 250, 0.95);
   font-weight: 600;
   transition: all 300ms ease-in-out;
+}
+
+.sidemenu {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.log-in-tab {
+  margin: 1rem 1.2rem;
+}
+
+.map-menu {
+  margin: 1.2rem 1rem;
+  list-style-type: none;
+}
+.map-menu li {
+  margin: 0.5rem 0.5rem;
+}
+.map-menu li button {
+  font-size: 0.8rem;
+  width: 4.8rem;
+  height: 2.1rem;
+  border-bottom: 1.5px inset rgba(10, 10, 10, 0.9);
+  border-radius: 12px;
+  box-shadow: 0px 3px 5px rgba(5, 5, 5, 0.035);
+}
+
+.log-in-container--form label {
+  margin-right: 0.2rem;
+}
+
+input {
+  border-radius: 12px;
+  border: 1px solid rgba(10, 10, 10, 0.3);
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  border-radius: 12px;
+  border-bottom: 1px solid rgba(25, 2, 255, 0.3);
+  border-left: 1px solid rgba(25, 2, 255, 0.3);
+  background-color: rgba(55, 255, 155, 0.095);
 }
 
 *, *::before, *::after {
