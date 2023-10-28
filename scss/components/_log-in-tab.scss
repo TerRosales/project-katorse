@@ -13,8 +13,10 @@
 }
 
 .map-menu {
-    margin: 1.2rem 1rem;
     list-style-type: none;
+    justify-content: center;
+    text-align: end;
+    display: flex;
     li {
         margin: 0.5rem 0.5rem;
         button{
@@ -28,11 +30,6 @@
     }
 }
 
-.log-in-container--form {
-    label {
-        margin-right: 0.2rem;
-    }
-}
 
 input {
     border-radius: 12px;

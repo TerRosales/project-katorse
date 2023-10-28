@@ -195,8 +195,10 @@ ul li a:hover {
 }
 
 .map-menu {
-  margin: 1.2rem 1rem;
   list-style-type: none;
+  justify-content: center;
+  text-align: end;
+  display: flex;
 }
 .map-menu li {
   margin: 0.5rem 0.5rem;
@@ -208,10 +210,6 @@ ul li a:hover {
   border-bottom: 1.5px inset rgba(10, 10, 10, 0.9);
   border-radius: 12px;
   box-shadow: 0px 3px 5px rgba(5, 5, 5, 0.035);
-}
-
-.log-in-container--form label {
-  margin-right: 0.2rem;
 }
 
 input {
